@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxtjs/supabase'
-  ],
+  modules: ['@nuxt/ui', '@nuxtjs/supabase'],
 
   supabase: {
     redirect: false
@@ -26,15 +22,6 @@ export default defineNuxtConfig({
     public: {
         supabaseUrl: '',
         supabaseKey: ''
-    }
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
     }
   }
 });
