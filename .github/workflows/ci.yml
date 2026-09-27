@@ -1,6 +1,10 @@
-name: ci
+name: NuxtJS CI - dependencies & types
 
-on: push
+on: [push, pull_request]
+
+env:
+  NUXT_PUBLIC_SUPABASE_URL: ${{ vars.NUXT_PUBLIC_SUPABASE_URL }}
+  NUXT_PUBLIC_SUPABASE_KEY: ${{ vars.NUXT_PUBLIC_SUPABASE_KEY }}
 
 jobs:
   ci:

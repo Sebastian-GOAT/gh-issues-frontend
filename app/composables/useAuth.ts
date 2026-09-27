@@ -16,6 +16,7 @@ export default function useAuth() {
 
     const signOut = async () => {
         await supabase.auth.signOut();
+        navigateTo('/', { redirectCode: 302 });
     };
 
     return {
